@@ -9,10 +9,7 @@ return require('packer').startup(function(use)
 
 	-- Nice colorscheme
 	use {
-		'folke/tokyonight.nvim',
-	 	config = function()
-		  	vim.cmd('colorscheme tokyonight')
-	  	end
+		'catppuccin/nvim', as = "catppuccin",
 	}
 
 	-- nvim-treesitter
