@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "/home/plut0n/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/plut0n/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   vimtex = {
     loaded = true,
     path = "/home/plut0n/.local/share/nvim/site/pack/packer/start/vimtex",
