@@ -12,6 +12,7 @@ local map = vim.keymap.set
 map("n","<leader>w",":w!<cr>")
 
 -- Fast quitting
+map("n","<leader>x",":x<cr>")
 map("n","<leader>q",":q!<cr>")
 map("n","<leader>Q",":qa<cr>")
 
@@ -98,3 +99,7 @@ map("n","<leader>sn","]s") -- next word
 map("n","<leader>sp","[s") -- previous word
 map("n","<leader>sa","zg") -- add word to dict
 map("n","<leader>s=","z=") -- suggestion
+
+map('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
+map('n', '<leader>d[', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
+map('n', '<leader>d]', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap = true, silent = true })

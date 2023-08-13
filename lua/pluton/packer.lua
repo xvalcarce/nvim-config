@@ -63,4 +63,7 @@ return require('packer').startup(function(use)
 
 	-- git
 	use 'tpope/vim-fugitive'
+
+	-- term
+	use "akinsho/toggleterm.nvim"
 end)

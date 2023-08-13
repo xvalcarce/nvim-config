@@ -126,8 +126,17 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 -- LSP servers
 ---
 
-lspconfig.sumneko_lua.setup({})
+lspconfig.lua_ls.setup({})
 lspconfig.julials.setup({})
 lspconfig.bashls.setup({})
 lspconfig.texlab.setup({})
 lspconfig.pyright.setup({})
+lspconfig.ltex.setup({})
+
+vim.diagnostic.config({
+  virtual_text = false
+})
+
+-- Show line diagnostics automatically in hover window
+vim.o.updatetime = 250
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
