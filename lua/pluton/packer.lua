@@ -66,4 +66,10 @@ return require('packer').startup(function(use)
 
 	-- term
 	use "akinsho/toggleterm.nvim"
+
+	-- telescope
+	use {
+		'nvim-telescope/telescope.nvim', tag = '0.1.3',
+  		requires = { {'nvim-lua/plenary.nvim'} }
+	}
 end)
