@@ -69,7 +69,13 @@ return require('packer').startup(function(use)
 
 	-- telescope
 	use {
+    	"nvim-telescope/telescope-file-browser.nvim",
+    	requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+	}
+	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.3',
   		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+	use 'cljoly/telescope-repo.nvim'
+	use "nvim-telescope/telescope-project.nvim"
 end)

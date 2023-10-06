@@ -16,6 +16,8 @@ map("n","<leader>x",":x<cr>")
 map("n","<leader>q",":q!<cr>")
 map("n","<leader>Q",":qa<cr>")
 
+-- Fast CD
+map("n","<leader>cd",":cd %:h<cr>")
 
 ----------------------------------------------------------------
 -- => Moving around w/ shortcuts
