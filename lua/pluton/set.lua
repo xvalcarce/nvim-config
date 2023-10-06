@@ -29,7 +29,6 @@ vim.opt.matchtime = 2
 vim.opt.errorbells = false
 vim.opt.visualbell = false
 
-
 ------------------------------------------------------------------
 -- => Text, tab and indent related
 ------------------------------------------------------------------
@@ -74,3 +73,9 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
+
+----------------------------------------------------------------
+-- => Provider
+----------------------------------------------------------------
+
+vim.g.loaded_python3_provider = 0
