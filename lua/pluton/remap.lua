@@ -65,9 +65,9 @@ map("n","<leader>tm",":tabmove")
 -- => Useful func leader-binded
 ----------------------------------------------------------------
 
--- Terminal (vertical/horizontal split)
-map("n","<leader>tv",":vsplit term://zsh<cr>")
-map("n","<leader>th",":split term://zsh<cr>")
+-- Terminal (vertical/horizontal split) -- now handled by toggleterm
+-- map("n","<leader>tv",":vsplit term://zsh<cr>")
+-- map("n","<leader>th",":split term://zsh<cr>")
 
 -- Clipboard
 map("v","<leader>y","\"+y")
