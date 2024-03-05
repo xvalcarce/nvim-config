@@ -78,4 +78,11 @@ return require('packer').startup(function(use)
 	}
 	use 'cljoly/telescope-repo.nvim'
 	use "nvim-telescope/telescope-project.nvim"
+
+	-- harpoon2
+	use {
+    	"ThePrimeagen/harpoon",
+    	branch = "harpoon2",
+    	requires = { {"nvim-lua/plenary.nvim"} }
+	}
 end)
